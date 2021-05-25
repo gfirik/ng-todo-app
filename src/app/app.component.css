@@ -1,0 +1,18 @@
+.app {
+  padding: 2rem;
+  width: 100%;
+}
+
+.app header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app header h1 {
+  font-size: 40px;
+}
+/*# sourceMappingURL=app.component.css.map */

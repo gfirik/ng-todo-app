@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Literata:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Literata', serif;
+}
+
+body {
+  background: #bdc3c7;
+  color: #333;
+}
+
+button {
+  border: none;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,88 @@
+.todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFF;
+  color: #222f3e;
+  height: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 5px 5px 10px #5a5a5a;
+          box-shadow: 5px 5px 10px #5a5a5a;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.todo:nth-child(even) {
+  background-color: #c8d6e5;
+}
+
+.todo:nth-child(odd) {
+  background-color: #8395a7;
+}
+
+.todo:last-of-type {
+  border-bottom: 0;
+}
+
+.todo .id {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50px;
+          flex: 1 1 50px;
+  margin: 2rem;
+}
+
+.todo .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+.todo button {
+  background: #5a5a5a;
+  font-size: 2rem;
+  height: 4rem;
+  width: 4rem;
+  color: #f3f3f3;
+  justify-self: flex-end;
+}
+
+.todo.done .content {
+  text-decoration: line-through;
+}
+
+.todo-input {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background-color: #F3F3F3;
+  margin-top: 15px;
+  font-size: 20px;
+  outline: none;
+  -webkit-box-shadow: 5px 5px 10px #5a5a5a;
+          box-shadow: 5px 5px 10px #5a5a5a;
+}
+
+.todo-submit {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  background-color: #5a5a5a;
+  color: #FFF;
+  margin: 15px auto;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=todos.component.css.map */
