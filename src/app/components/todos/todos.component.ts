@@ -8,7 +8,6 @@ import { Todo } from './../../models/todo';
 })
 
 export class TodosComponent implements OnInit {
-  [x: string]: any;
   
   todos: Todo[]=[];
   
@@ -45,6 +44,8 @@ export class TodosComponent implements OnInit {
       content: this.inputTodo,
       completed: false
     })
+
+    this.inputTodo="";
     
   }
 }
