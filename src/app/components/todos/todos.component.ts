@@ -1,3 +1,4 @@
+import { isEmptyExpression } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Todo } from './../../models/todo';
 
@@ -40,12 +41,16 @@ export class TodosComponent implements OnInit {
   }
 
   addTodo () {
-    this.todos.push({
-      content: this.inputTodo,
-      completed: false
-    })
-
+    if(this.inputTodo!==""){
+      this.todos.push({
+        content: this.inputTodo,
+        completed: false
+      })
+    } else {
+      alert("enter a todo first!");
+    }
     this.inputTodo="";
-    
   }
+  
 }
+

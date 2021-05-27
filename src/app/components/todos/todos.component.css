@@ -2,7 +2,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #FFF;
   color: #222f3e;
   height: 4rem;
   -webkit-box-align: center;
@@ -12,6 +11,8 @@
           box-shadow: 5px 5px 10px #5a5a5a;
   margin-top: 10px;
   font-size: 1.5rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .todo:nth-child(even) {
@@ -20,6 +21,10 @@
 
 .todo:nth-child(odd) {
   background-color: #8395a7;
+}
+
+.todo:hover {
+  background: #FFF;
 }
 
 .todo:last-of-type {
@@ -46,6 +51,13 @@
   width: 4rem;
   color: #f3f3f3;
   justify-self: flex-end;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.todo button:hover {
+  color: #5a5a5a;
+  background: #f3f3f3;
 }
 
 .todo.done .content {

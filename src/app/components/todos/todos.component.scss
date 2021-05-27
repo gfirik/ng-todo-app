@@ -1,17 +1,20 @@
 .todo {
 	display: flex;
-	background-color: #FFF;
 	color: #222f3e;
 	height: 4rem;
 	align-items: center;
 	box-shadow: 5px 5px 10px #5a5a5a;
 	margin-top: 10px;
 	font-size: 1.5rem;
+	transition: 0.5s;
     &:nth-child(even) {
 		background-color: #c8d6e5;
     }
 	&:nth-child(odd){
 		background-color: #8395a7;
+	}
+	&:hover {
+		background: #FFF;
 	}
     &:last-of-type {
         border-bottom: 0;
@@ -30,6 +33,11 @@
 		width: 4rem;
 		color: #f3f3f3;
 		justify-self: flex-end;
+		transition: 0.5s;
+		&:hover {
+			color: #5a5a5a;
+			background: #f3f3f3;
+		}
 	}
 }
 
